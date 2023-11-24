@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, ul, li, p, header, a, nav{
+    
+    margin: 0;
+    padding: 0; 
+    list-style: none;
+    font-family: monospace;
+
+}
+
+a{
+     
+    text-decoration: none;
+    color: white;
+
+}
+
+header{
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+
+}
+
+ul{
+
+    display: flex;
+
+}
+
+ul li{
+
+    margin-left: 30px;
+
+}
+
+h3{
+
+    font-size: 25px;
+    text-align: center;
+
+}
+
+img{
+
+    max-width: 100%;
+
+}
+
+section{
+
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+section article{
+
+    flex: 1 1 250px;
+    margin: 20px;
+    max-width: 400px;
+
+}
+
+@media (max-width: 706px){
+
+    section{
+
+        max-width: 90%;
+        flex-direction: column;
+
+    }
+
+    article p{
+
+        font-size: 20px;
+        color: #b8b8b8;
+
+    }
+
+}
+
+@media (max-width: 670px){
+
+    header{
+
+        padding: 20px;
+        font-size: 30px;
+
+    }
+
+    header a{
+
+        display: block;
+
+    }
+
+    ul{
+
+        display: block;
+        float: right;
+
+    }
+
+    li{
+
+        background-color: #c0c0c0;
+        margin: 8px;
+        font-size: 15px;
+
+    }
+
+    section article{
+
+        margin: 25px;
+
+    }
+
+}
